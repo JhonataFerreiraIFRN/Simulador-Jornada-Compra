@@ -12,6 +12,134 @@
 
 <body>
 
+ <div class="container">
+
+        <header class="header">
+            <h1 class="main-title">
+                <span class="icon">🛍️</span>
+                Simulador de Jornada de Compra
+            </h1>
+            <p class="subtitle">Visualize e simule as decisões do cliente até a compra</p>
+        </header>
+
+
+        <main class="main-content">
+
+            <section class="control-panel">
+                <div class="panel-header">
+                    <h2>Controles</h2>
+                </div>
+                <div class="control-buttons">
+                    <button id="add-node-btn" class="btn btn-primary">
+                        <span class="btn-icon">➕</span>
+                        Adicionar Nó
+                    </button>
+                    <button id="start-journey-btn" class="btn btn-success">
+                        <span class="btn-icon">🚀</span>
+                        Iniciar Jornada
+                    </button>
+                    <button id="go-back-btn" class="btn btn-secondary">
+                        <span class="btn-icon">⬅️</span>
+                        Voltar
+                    </button>
+                    <button id="reset-journey-btn" class="btn btn-warning">
+                        <span class="btn-icon">🔄</span>
+                        Resetar
+                    </button>
+                </div>
+            </section>
+
+
+            <section class="tree-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-icon">🌳</span>
+                        Árvore de Decisões
+                    </h2>
+                    <div class="tree-info">
+                        <span class="info-badge">Visualização Hierárquica</span>
+                    </div>
+                </div>
+                <div class="tree-wrapper">
+                    <div id="tree-container" class="tree-container">
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="journey-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-icon">🎯</span>
+                        Simulação da Jornada
+                    </h2>
+                    <div class="journey-status">
+                        <span class="status-indicator" id="journey-status">Aguardando início</span>
+                    </div>
+                </div>
+                <div class="journey-wrapper">
+                    <div id="journey-container" class="journey-container">
+                        <div class="welcome-message">
+                            <div class="welcome-icon">👋</div>
+                            <h3>Bem-vindo ao Simulador!</h3>
+                            <p>Clique em "Iniciar Jornada" para começar a simulação da jornada de compra do usuário.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="path-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-icon">📍</span>
+                        Caminho Percorrido
+                    </h2>
+                    <div class="path-stats">
+                        <span class="stats-badge" id="path-length">0 passos</span>
+                    </div>
+                </div>
+                <div class="path-wrapper">
+                    <div id="path-container" class="path-container">
+                        <div class="empty-path">
+                            <div class="empty-icon">🗺️</div>
+                            <p>O caminho percorrido aparecerá aqui durante a jornada.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Simulador de Jornada de Compra - Desenvolvido com TypeScript</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">Estruturas de Dados</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="modal-container"></div>
+
+
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+
+    <script src="./simulado_jornada_user.ts"></script>
+
 </body>
 </html>
 
