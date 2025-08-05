@@ -432,6 +432,7 @@ findNodesByCategory(category: string): DecisionNode[] {
 - **Pontos de Abandono**: Nós onde usuários param mais
 
 ### Implementação de Tracking
+
 ```typescript
 class JourneyAnalytics {
     private journeys: Journey[] = [];
